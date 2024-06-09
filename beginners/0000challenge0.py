@@ -17,9 +17,9 @@ def find_flag(text):
 
 text = """Naljnl, Pnrfne jnf n fxvyyrq pbzzhavpngbe, naq ur hfrq n inevrgl bs zrgubqf gb xrrc uvf zrffntrf frperg sebz uvf rarzvrf.
 Bar bs gurfr zrgubqf jnf gur Pnrfne pvcure, n fvzcyr grpuavdhr gb boshfpngr pbzzhavpngvbaf. SYNT{ebgngr_gung_nycunorg}"""
-max_iterations = 26
+max_iterations = 27
 
-for i in range(1, max_iterations + 1):
+for i in range(max_iterations):
   shifted_text = caesar_cipher(text, i)
   if find_flag(shifted_text):
     print(f"Found FLAG after {i} shifts:\n{shifted_text}")
